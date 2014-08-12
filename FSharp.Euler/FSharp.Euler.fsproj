@@ -55,11 +55,6 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <None Include="App.config" />
-    <Compile Include="Benchmark.fs" />
-    <Compile Include="Combinatorics.fs" />
-    <Compile Include="Seq.fs" />
-    <Compile Include="NumberTheory.fs" />
-    <Compile Include="Sequences.fs" />
     <Content Include="base_exp.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -72,6 +67,11 @@
     <Content Include="words_98.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Compile Include="Benchmark.fs" />
+    <Compile Include="Combinatorics.fs" />
+    <Compile Include="Seq.fs" />
+    <Compile Include="NumberTheory.fs" />
+    <Compile Include="Sequences.fs" />
     <Compile Include="Problem1.fs" />
     <Compile Include="Problem2.fs" />
     <Compile Include="Problem42.fs" />
