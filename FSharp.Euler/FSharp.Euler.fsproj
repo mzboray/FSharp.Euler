@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C09B5E52-E283-4CBA-9A7A-7B64644C8A50}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FSharp.Euler</RootNamespace>
+    <AssemblyName>FSharp.Euler</AssemblyName>
+    <BuildOrder>
+      <BuildOrder>
+        <String>AssemblyInfo.fs</String>
+        <String>Seq.fs</String>
+        <String>NumberTheory.fs</String>
+        <String>Combinatorics.fs</String>
+        <String>Sequences.fs</String>
+        <String>Benchmark.fs</String>
+        <String>Problems/Problem1.fs</String>
+        <String>Problems/Problem42.fs</String>
+        <String>Problems/Problem44.fs</String>
+        <String>Problems/Problem45.fs</String>
+        <String>Problems/Problem48.fs</String>
+        <String>Problems/Problem53.fs</String>
+        <String>Problems/Problem54.fs</String>
+        <String>Problems/Problem57.fs</String>
+        <String>Problems/Problem85.fs</String>
+        <String>Problems/Problem99.fs</String>
+        <String>Problems/Problem140.fs</String>
+        <String>Problems/Problem148.fs</String>
+        <String>Problems/Problem98.fs</String>
+        <String>Problems/Problem97.fs</String>
+        <String>Problems/Problem94.fs</String>
+        <String>Problems/Problem65.fs</String>
+        <String>Problems/Problem92.fs</String>
+        <String>Problems/Problem2.fs</String>
+        <String>Problems/Problem116.fs</String>
+        <String>Problems/Problem70.fs</String>
+        <String>Program.fs</String>
+      </BuildOrder>
+    </BuildOrder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <Tailcalls>true</Tailcalls>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="NumberTheory.fs" />
+    <Compile Include="Program.fs" />
+    <Compile Include="Problems\Problem44.fs" />
+    <Compile Include="Problems\Problem45.fs" />
+    <Compile Include="Problems\Problem48.fs" />
+    <Compile Include="Problems\Problem148.fs" />
+    <Compile Include="Seq.fs" />
+    <Compile Include="Problems\Problem57.fs" />
+    <Compile Include="Problems\Problem85.fs" />
+    <Compile Include="Problems\Problem99.fs" />
+    <Compile Include="Problems\Problem140.fs" />
+    <Compile Include="Problems\Problem42.fs" />
+    <Compile Include="Problems\Problem54.fs" />
+    <Compile Include="Combinatorics.fs" />
+    <Compile Include="Problems\Problem53.fs" />
+    <Compile Include="Problems\Problem97.fs" />
+    <Compile Include="Problems\Problem98.fs" />
+    <Compile Include="Problems\Problem94.fs" />
+    <Compile Include="Problems\Problem65.fs" />
+    <Compile Include="Problems\Problem92.fs" />
+    <Compile Include="Problems\Problem1.fs" />
+    <Compile Include="Problems\Problem2.fs" />
+    <Compile Include="Problems\Problem116.fs" />
+    <Compile Include="Problems\Problem70.fs" />
+    <Compile Include="Sequences.fs" />
+    <Compile Include="Benchmark.fs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
+  <ItemGroup>
+    <Folder Include="Problems\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\base_exp.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\words.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\poker.txt" />
+    <None Include="Data\words_98.txt" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/x-fsharp" />
+          <TextStylePolicy FileWidth="120" TabsToSpaces="False" inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/plain" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>
