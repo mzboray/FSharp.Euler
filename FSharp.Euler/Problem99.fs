@@ -11,7 +11,7 @@ module Problem99 =
     | _ -> failwith "Invalid format"
 
   let private readData = 
-    let lines = File.ReadAllLines("Data/base_exp.txt")
+    let lines = File.ReadAllLines("base_exp.txt")
     seq { for line in lines do yield parseLine line }
 
   let solve = 

@@ -18,7 +18,7 @@ module Problem98 =
 //    loop word
 //
   let solve = ()
-//    let words = File.ReadAllText("Data/words_98.txt").Split(',') |> Array.map (fun s -> s.Trim('\"'))
+//    let words = File.ReadAllText("words_98.txt").Split(',') |> Array.map (fun s -> s.Trim('\"'))
 //    for words in words
 //      for c in word
 //        

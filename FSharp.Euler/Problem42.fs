@@ -3,11 +3,11 @@ namespace FSharp.Euler.Problems
 open System
 open System.IO
 open System.Collections.Generic
-open Euler.Common.NumberTheory
+open FSharp.Euler.Common.NumberTheory
 
 module Problem42 =
   let private readData =
-    let data = File.ReadAllText("Data/words.txt").Split(',')
+    let data = File.ReadAllText("words.txt").Split(',')
     seq { for word in data do yield word.Trim('\"') }
   
   let solve =

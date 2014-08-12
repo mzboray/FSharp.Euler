@@ -7,7 +7,7 @@ open System.Numerics
 open FSharp.Euler.Common.Seq
 open Microsoft.FSharp.Core
 
-  module NumberTheory =
+module NumberTheory =
 
     let inline gcd a b =
       let m, n = (max a b), (min a b)
